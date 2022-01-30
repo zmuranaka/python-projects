@@ -66,7 +66,7 @@ def update():
             if frog.x > 536: # Make sure the frog doesn't leave the screen
                 frog.x-=20
             else:
-                frog.x+=6 
+                frog.x+=6
         if keyboard.up:
             if frog.y < 64: # Make sure the frog doesn't leave the screen
                 frog.y+=20

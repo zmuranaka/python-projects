@@ -22,12 +22,12 @@ def placeMail():
 # Runs any time the player clicks their mouse
 def on_mouse_down(pos):
     global score
-    
+
     # The player clicked the mail
     if mail.collidepoint(pos):
         score += 1
         placeMail()
-    
+
     # The player clicked somewhere other than the mail
     else:
         if score < 5:

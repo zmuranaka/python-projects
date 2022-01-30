@@ -20,7 +20,7 @@ def beat():
     print(randomG)
     print()
     clock.schedule_unique(beat, 0.3)
-        
+
 def on_key_down():
     global octave
 
@@ -59,9 +59,9 @@ def on_key_down():
         tone.create('F' + octave, 0.5).play()
     if keyboard.G:
         tone.create('G' + octave, 0.5).play()
-    
+
     # Starts the beat
     if keyboard.S:
-        beat()      
-        
+        beat()
+
 pgzrun.go()
